@@ -75,7 +75,7 @@ object DatasetExamples {
       .as[ClickData]
     // .filter($"timestamp" >= 1609448400000L) // to improve read performance (filter push down)
     // .select("event") // to improve read performance (column push down)
-
+    println("asFDASFASFASFASF", clicks)
     // Calculate total counts for each event type which has timestamp greater than 1609448400000L
     clicks
       .filter(_.timestamp >= 1609448400000L)
